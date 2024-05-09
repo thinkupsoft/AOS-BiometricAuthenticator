@@ -13,7 +13,7 @@ BiometricAuthenticator is a library that facilitates biometric authentication in
 To include `BiometricAuthenticator` in your project, add the following dependency to your `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'com.thinkup:biometric-authenticator-library:1.0'
+    implementation 'com.thinkup:biometric-authenticator-library:1.1'
 }
 ```
 

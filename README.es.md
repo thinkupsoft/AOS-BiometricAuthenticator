@@ -124,3 +124,5 @@ Desencripta un token cifrado usando autenticación biométrica.
 ```kotlin
 val decryptedToken = biometricAuthenticator.decryptToken(authResult, "KEY_FOR_LOGIN")
 ```
+
+[BiometricAuthenticator.webm](https://github.com/thinkupsoft/AOS-BiometricAuthenticator/assets/4175950/f7298037-b6af-491f-8b63-3f870e1fde9a)

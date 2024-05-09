@@ -43,7 +43,6 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    //implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,7 +65,7 @@ afterEvaluate {
 
                 groupId = "com.github.thinkupsoft"
                 artifactId = "biometric-authenticator-library"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }

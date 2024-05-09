@@ -2,7 +2,6 @@ package com.thinkup.biometric_authenticator_library.components
 
 import android.content.Context
 import androidx.biometric.BiometricPrompt.AuthenticationResult
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.fragment.app.FragmentActivity
@@ -12,7 +11,7 @@ import com.thinkup.biometric_authenticator_library.BiometricAuthenticator
  * Created by Martin Zarzar on 17/4/24.
  */
 @Composable
-fun TouchIdDialog(
+fun BiometricAuthDialog(
     context: Context,
     prefKey: String,
     title: String,
@@ -43,9 +42,4 @@ fun TouchIdDialog(
 
         onDispose { }
     }
-}
-
-@Composable
-fun TestLibrary(){
-    Text(text = "TEST TEST")
 }

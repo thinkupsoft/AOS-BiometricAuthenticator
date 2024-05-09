@@ -19,12 +19,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.FragmentActivity
-import com.thinkup.biometric_authenticator_library.components.TouchIdDialog
+import com.thinkup.biometric_authenticator_library.components.BiometricAuthDialog
 import com.thinkup.biometricauthenticator.ui.theme.BiometricAuthenticatorTheme
 
 class MainActivity : FragmentActivity() {
@@ -59,15 +58,15 @@ fun MainContent() {
         Button(
             modifier = Modifier.fillMaxWidth(),
             onClick = { showDialog = !showDialog }) {
-            Text(text = "LOGIN")
+            Text(text = "Open BiometricAuthDialog")
         }
 
         if (showDialog) {
-            TouchIdDialog(
+            BiometricAuthDialog(
                 context = context,
                 prefKey = "KEY_FOR_LOGIN",
                 title = "Activar biometría",
-                subtitle = "¿Quieres permitir el uso su huella digital o reconocimiento facial para acceder a tu cuenta?",
+                subtitle = "¿Quieres permitir el uso de biometría para acceder?",
                 negativeButtonText = "Cancelar",
                 onSuccess = {
                     showDialog = false

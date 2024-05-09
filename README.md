@@ -1,6 +1,6 @@
 
 # AOS-BiometricAuthenticator
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/thinkupsoft/AOS-BiometricAuthenticator/README.es.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/thinkupsoft/AOS-BiometricAuthenticator/blob/main/README.es.md)
 
 BiometricAuthenticator is a library that facilitates biometric authentication in Android applications using Jetpack Compose.
 
